@@ -1,0 +1,16 @@
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+$ git config --global merge.tool vimdiff - will help to solve the problems                                            with merging
+
+git config --list - will check yours settings and you'll get something like this:
+
+$ git config --list
+user.name=Scott Chacon
+user.email=schacon@gmail.com
+color.status=auto
+color.branch=auto
+color.interactive=auto
+color.diff=auto
+...
+

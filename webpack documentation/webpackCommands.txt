@@ -1,0 +1,17 @@
+Create Json dev-dependencies:
+npm init
+write all info about the json that you'll built
+
+npm install babel --save - import the babel lib to the project and put it to dependencies
+
+npm install --save-dev  - open the dev-dependencies
+
+npm install --save-dev babel -import the babel lib to the project and put it to dev-dependencies
+
+npm install --save-dev copy-webpack-plugin  -import webpack-plagin to the project, that lets to copy static files in dept. its goes to dev dependencies
+
+git init - create the new empty repository
+
+npm install file-loader --save-dev   - To actually copy the file over we need the file-loader package, which is a loader that copies files.
+
+webpack --watch  - build a bundle.js and bundle.js.map every refresh. making refresh automaticly

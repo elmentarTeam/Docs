@@ -1,0 +1,13 @@
+#all files in this directory shoud be ignored
+
+node_modules/
+bundle.js
+bundle.js.map
+dist/
+
+
+
+#files that not be ignored
+!package.json
+!index.html
+

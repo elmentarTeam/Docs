@@ -1,0 +1,10 @@
+Initializing a project
+
+mkdir ProjectName
+cd project name
+git init
+npm init - write all info for creating json.config.js script
+
+npm install webpack -installing the webpack for the project. if you want it a global just put in the end --global
+
+

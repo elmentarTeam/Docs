@@ -1,0 +1,22 @@
+npm i webpack-dev-server -D
+
+npm run webpack-dev-server
+
+webpack-dev-server
+and you'll get a URL address:
+
+http://localhost:8080/webpack-dev-server/
+webpack result is served from /
+content is served from D:\User\webWorkspace\copy-webpack
+Hash: 4d40dd2d4866ab663059
+Version: webpack 1.12.11
+Time: 11886ms
+
+cd dist
+
+webpack-dev-server
+
+Hash: 396f0bfb9d565b6f60f0
+Version: webpack 1.12.11
+Time: 10ms
+webpack: bundle is now VALID.

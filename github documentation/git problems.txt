@@ -1,0 +1,8 @@
+if you have a problemm with adding webpack.config.js to you local repository, just add this command:
+
+git config core.autocrlf false
+git config core.safecrlf false
+
+git config --global core.safecrlf false
+
+Or not --global, is you don't need it

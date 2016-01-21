@@ -1,0 +1,19 @@
+npm install source-map
+
+webpack.config.js 
+module.exports
+devtool: 'source-map', -add mapping to config. It will create a source mapping for bundle
+
+
+if I want to put it into the dev dependencies:
+
+npm install source-map --save-dev
+
+it's possible to put a bundle.js.map on the brouser. All that you need to do, just write bundle.js.map in config output and index.html
+
+
+
+
+
+
+

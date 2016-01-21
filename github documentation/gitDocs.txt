@@ -1,0 +1,124 @@
+CONFIG
+
+git config - gives you all possible commands
+
+git config --global user.name ""
+git config --global user.email c@g.com 
+
+git config --list  - shows all settings
+
+git config --global alias.ci commit -  from now you can write "git ci" and not "git commit"
+_________________________________________________________________________________________________________________________________________________________________
+HELP
+
+git help
+git help config - help to specific command(config)
+__________________________________________________________________________________________________________________________________________________________________
+INITIALISATION OF THE PROJECT
+
+git init - inisiallisaton of git in specific project
+__________________________________________________________________________________________________________________________________________________________________
+COPY PROJECT TO LOCAL REPOSITORY
+
+git clone [url] - copy existing project to your repository. its build a grit package and put there an existing project.
+                  If you want another name for grit, just write url name/grit.git newname it will be an untracked file!!!
+_________________________________________________________________________________________________________________________________________________________________
+ADD
+
+git add [filename in your package] - lets changes to be commited
+
+git add . - save changes in the repository
+
+git add '*.txt' - adds all the files with .txt
+
+git status - shows your status 
+_________________________________________________________________________________________________________________________________________________________________
+COMMIT
+
+git commit - save all the chages you made. Be sure that before you made an "git add" command
+for getting out from commit you need wrire the comment; push ESC; :wq ; ENTER
+
+git commit -a - making index ad save the changes
+
+git commit -m "some commets for this commit"
+
+ git commit --amend - cancel the last commit
+__________________________________________________________________________________________________________________________________________________________________
+DELETE
+
+git rm - delete the index of file before the total delete (git commit)
+
+git reset HEAD filename  - cancel the indexsation of the file
+
+_________________________________________________________________________________________________________________________________________________________________
+RENAME
+
+ git mv readme.txt readme - renaming readme.txt to readme
+__________________________________________________________________________________________________________________________________________________________________
+TO GET INFORMATION
+
+git log - Think of Git's log as a journal that remembers all the changes we've committed so far,
+          in the order we committed them.
+
+git diff - to see what's you've change but still not indexed
+__________________________________________________________________________________________________________________________________________________________________
+REMOTE REPOSITORY
+
+git remote - shows a remoted repos that have a conn with the local repo
+ 
+ git remote rm [name] - delete the con between local and remote repo
+ 
+ git remote -v - shows the URL of remoted repository
+
+ git remote show <remote> - like git log to local repo
+ 
+ git remote add [name][URL] - open connection between the local repo and remote one.
+                              name = how you will call the remote repo in the future. 
+							  URL = the URL of remote repo
+ 
+ git fetch [filename] - shows all info from remote repo
+ 
+ git fetch <remote> <branch> - the same action, just all the things doing from spesific branch
+ 
+__________________________________________________________________________________________________________________________________________________________________
+BRANCH ACTIONS
+
+ git branch testing - build the new branch named "testing"
+ 
+ git checkout testing - pass to the new branch, named "testing"
+ 
+ git checkout -b "branch name" - create a new branch and swiching on it
+ 
+ git merge master - making update of commit info on the new branch and pass the changes to master. The new branch also points to master
+ 
+ git branch -d [branch name] - delete a branch
+ 
+ git branch - shows the names of existing branches. '*' symbol shows on witch branch you sitiing right now
+ 
+  git branch -v - shows the last commit on every branch
+  
+  git branch --merged -        shows the branches that you've already merged with master
+  git branch --no-merged -     -//- not merged
+  
+  !!! If a branch not marged, you can't delete it with git branch -d and you can do it by the next command
+  git branch -D
+__________________________________________________________________________________________________________________________________________________________________
+  PUSH/PULL/REBASE
+  
+  git push [name of the server you sending] [branch name] - update the server brunch
+  
+  git push [name of the server you sending] [branch name]:[branch name] -same shit different name. You can give another name to the branch on the web server
+  
+  git push [webserver name] [branch name] - delete branch from the webserver
+  
+  git rebase --onto [main branch] [child branch] [grandson branch] - making marge to main  branch from grandson branch
+  
+   git pull <remote name> master - like git status to remote repository. 
+                                 You can put another branch name (not master) merge alocal 
+								 branch with remote one
+
+ git push -u origin master - The name of our remote is origin and the default local branch name is master. 
+                             The -u tells Git to remember the parameters, so that next time we can simply 
+							 run git push and Git will know what to do.
+  
+__________________________________________________________________________________________________________________________________________________________________

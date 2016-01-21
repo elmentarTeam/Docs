@@ -1,0 +1,15 @@
+webpack.config.js
+module.exports
+output: {
+        filename:'bundle.js',
+		path: __dirname + "/dist",
+    },
+
+
+
+for adding the files to dist just add the filename to output, for example:
+output: {
+        filename:'bundle.js',
+	filename:'main.js',
+		path: __dirname + "/dist",
+    },

@@ -1,0 +1,19 @@
+{
+  "name": "expampleProject",
+  "version": "1.0.0",
+  "description": "modular programmiring",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "author": "Kalantar",
+  "license": "ISC",
+  "devDependencies": {
+    "source-map": "^0.5.3",
+    "webpack": "^1.12.10"
+  }
+}

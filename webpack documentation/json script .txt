@@ -1,0 +1,15 @@
+"description": "bla bla",
+  
+"scripts": {
+    "build": "webpack",
+
+         	"watch": "webpack --watch",
+         
+	"start": "webpack main.js dist/bundle.js"
+  },
+ 
+ "main": "main.js",
+
+
+in cmd, for calling the command you need to wtrite:
+npm run build

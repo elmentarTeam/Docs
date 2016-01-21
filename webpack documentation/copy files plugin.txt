@@ -1,0 +1,14 @@
+npm install --save-dev copy-webpack-plugin  -import webpack-plagin to the project, that lets to copy static files in dept. its goes to dev dependencies
+
+in webpack.config.js you need to write:
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
+
+plugins: [
+        
+		new CopyWebpackPlugin([
+			{ from: './index.html', to: './dist/index.html' },
+			{ from: './bundle.js', to: './dist/bundle.js' },
+			{ from: './bundle.js.map', to: './dist/bundle.js.map' }
+	
+	])
